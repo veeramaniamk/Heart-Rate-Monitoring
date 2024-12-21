@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Heart Rate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg">Please enable all permission</string>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

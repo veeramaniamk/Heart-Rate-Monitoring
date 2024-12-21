@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HeartRateResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/headingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Your Result"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="270dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/for_layout_radius">
+
+            <!-- Second Image and Name -->
+
+            <ImageView
+                android:id="@+id/pulseImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/heartscore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/heartScoreImage"
+                android:layout_width="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/heartpulse"
+                app:layout_constraintEnd_toStartOf="@+id/pulseImage"
+                app:layout_constraintHorizontal_bias="0.431"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pulseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulse"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="-10dp"
+                app:layout_constraintEnd_toStartOf="@+id/heartScoreName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heartScoreImage" />
+
+            <TextView
+                android:id="@+id/heartScoreName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Score"
+                android:textColor="#000000"
+                android:layout_marginEnd="30dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pulseImage" />
+
+            <View
+                android:id="@+id/redCircle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/redcircle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pulseName" />
+
+            <TextView
+                android:id="@+id/HRR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="79 bpm"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/redCircle"
+                app:layout_constraintEnd_toEndOf="@+id/redCircle"
+                app:layout_constraintStart_toStartOf="@+id/redCircle"
+                app:layout_constraintTop_toTopOf="@+id/redCircle" />
+
+            <View
+                android:id="@+id/yellowCircle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/yellowcircle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/redCircle"
+                app:layout_constraintTop_toBottomOf="@+id/heartScoreName" />
+
+            <TextView
+                android:id="@+id/heartScoreValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="good"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/yellowCircle"
+                app:layout_constraintEnd_toEndOf="@+id/yellowCircle"
+                app:layout_constraintStart_toStartOf="@+id/yellowCircle"
+                app:layout_constraintTop_toTopOf="@+id/yellowCircle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp" >
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customized_button"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

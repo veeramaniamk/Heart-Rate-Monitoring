@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg4"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:weightSum="1"
+        tools:context="com.example.heartrate.Login">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textinputborder"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/black" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <EditText
+            android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textinputborder"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/black" />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/re_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Re-Enter password"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black" />
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black" />
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black" />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Height"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black" />
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Weight"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+           />
+
+
+
+        <Spinner
+            android:id="@+id/SGender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputborder"
+            android:paddingLeft="15dp"
+
+            android:textColor="@android:color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Pink"
+            />
+
+
+    </LinearLayout>

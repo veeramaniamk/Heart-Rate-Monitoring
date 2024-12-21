@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/white"
+    tools:context="com.example.heartrate.HeartRateProcess">
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Cancel"
+            android:onClick="cancel"
+            android:textColor="@color/Pink"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="155dp"
+            android:text="Measuring..."/>
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        >
+
+    </SurfaceView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/heartratenewprocess"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:id="@+id/show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            android:layout_marginTop="38dp"
+            app:layout_constraintStart_toStartOf="@+id/image"
+            app:layout_constraintTop_toTopOf="@+id/image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="340dp"
+        android:layout_height="20dp"
+        android:progressDrawable="@drawable/horizontal_progressbar"
+        android:layout_marginTop="140dp"
+        android:indeterminate="false"
+        android:layout_gravity="center"
+        android:id="@+id/HRPB"
+        android:max="20"
+        android:progress="1"
+        android:indeterminateTint="#e71e50"
+         />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="470dp"
+    android:background="@drawable/radius_for_popup"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.example.heartrate.StartVitalSigns">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/close"
+        android:text="x"
+        android:textSize="20dp"
+
+        android:gravity="center"
+        android:layout_marginTop="-40dp"
+        android:textColor="#171515"
+        android:layout_gravity="end"
+        />
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Please place your finger on camera"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="260dp"
+            android:layout_above="@+id/StartVS"
+            android:contentDescription="Image Description"
+            android:src="@drawable/finger_on_your_camera_2" />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/StartVS"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#e71e50"
+        android:gravity="center"
+        android:text="Next"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

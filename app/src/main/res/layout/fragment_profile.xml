@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Profile"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:background="@drawable/navigation_radius"
+        android:orientation="vertical"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="-90dp"
+        android:textColor="@color/white"
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/for_layout_radius"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_marginLeft="35dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/name"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/for_layout_radius"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/email"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:background="@drawable/for_layout_radius"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:id="@+id/age"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/for_layout_radius"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Height"
+
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:id="@+id/height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/for_layout_radius"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:id="@+id/weight"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:background="@drawable/for_layout_radius"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:id="@+id/gender"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#e71e50"
+        android:text="Logout"
+        android:textSize="18sp"
+        app:cornerRadius="32dp"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

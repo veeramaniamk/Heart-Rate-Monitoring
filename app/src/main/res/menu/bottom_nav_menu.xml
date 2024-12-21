@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/measure"
+        android:title="Measure"
+        android:icon="@drawable/measurement"/>
+    <item
+        android:id="@+id/Health"
+        android:title="Health"
+        android:icon="@drawable/dates"
+        />
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/profileview"/>
+</menu>
