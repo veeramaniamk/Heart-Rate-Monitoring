@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.heartrate"
+    namespace = "com.saveetha.heartrate"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.heartrate"
+        applicationId = "com.saveetha.heartrate"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -53,6 +53,7 @@ dependencies {
     implementation("com.android.support:support-compat:27.1.1") {
         exclude(group = "androidx.core", module = "core")
     }
+    implementation("com.google.android.play:app-update:2.1.0")
     //for animation
    // implementation ("androidx.navigation: navigation-fragment-ktx: 2.2.1")
     //implementation ("androidx.navigation: navigation-ui-ktx: 2.2.1");

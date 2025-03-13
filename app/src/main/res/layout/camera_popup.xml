@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context="com.example.heartrate.StartVitalSigns">
+    tools:context="com.saveetha.heartrate.StartVitalSigns">
 
     <TextView
         android:layout_width="30dp"

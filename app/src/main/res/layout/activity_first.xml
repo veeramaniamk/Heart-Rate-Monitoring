@@ -8,7 +8,7 @@
     android:background="@color/Dark"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context="com.example.heartrate.First">
+    tools:context="com.saveetha.heartrate.First">
 
 
     <LinearLayout

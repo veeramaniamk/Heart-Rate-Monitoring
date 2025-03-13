@@ -13,7 +13,7 @@
         android:paddingRight="16dp"
         android:paddingBottom="16dp"
         android:weightSum="1"
-        tools:context="com.example.heartrate.Login">
+        tools:context="com.saveetha.heartrate.Login">
 
         <EditText
             android:id="@+id/username"

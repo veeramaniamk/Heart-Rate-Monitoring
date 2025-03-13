@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:background="@color/white"
-    tools:context="com.example.heartrate.HeartRateProcess">
+    tools:context="com.saveetha.heartrate.HeartRateProcess">
     <LinearLayout
         android:id="@+id/headerLayout"
         android:layout_width="match_parent"
